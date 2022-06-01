@@ -1,18 +1,19 @@
-computerPlay = Math.floor(Math.random() * 3); 
-
-let rps = function(computerPlay) {
-    if (computerPlay == 0) {
-        return "rock";
-    } else if (computerPlay == 1) {
-        return "paper";
-    } else if (computerPlay == 2) {
-        return "scissors";
+function computerPlay(rps) {
+    let result;
+    let rndInt = Math.floor(Math.random() * 3);
+    if (rndInt == 0) {
+        result = "rock";
+    } else if (rndInt == 1) {
+        result = "paper";
+    } else if (rndInt == 2) {
+        result = "scissors";
     } else {
-        return "something went wrong";
+        result = "something went wrong";
     }
+    return result;
     }
 
-    rps();
+    console.log(computerPlay());
 
     
 
