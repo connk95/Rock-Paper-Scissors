@@ -15,9 +15,61 @@ function computerPlay(rps) {
 
     console.log(computerPlay());
 
+
+function round(two) {
+    let result;
+    let playerSelection = prompt("Please type rock, paper, or scissors.")
+
+    switch (computerPlay() == rock) {
+    
+        case playerSelection == rock:
+            result = "Tie game!";
+            break;
+        case playerSelection == paper:
+            result = "Paper beats rock! You win!"
+            break;
+        case playerSelection == scissors:
+            result = "Rock beats scissors! You lose!"
+            break;
+        default:
+            result = "Something went wrong."
+    }
+
+    switch (computerPlay() == paper) {
+
+        case playerSelection == rock:
+            result = "Paper beats rock! You lose!"
+            break;
+        case playerSelection == paper:
+            result = "Tie game!"
+            break;
+        case playerSelection == scissors:
+            result = "Scissors beats paper! You win!"
+            break;
+        default:
+            result = "Something went wrong."
+    }
+
+    switch (computerPlay() == scissors) {
+
+        case playerSelection == rock:
+            result = "Rock beats scissors! You win!"
+            break;
+        case playerSelection == paper:
+            result = "Scissors beats paper! You lose!"
+            break;
+        case playerSelection == scissors:
+            result = "Tie game!"
+        default:
+            result = "Something went wrong."
+    }
+    }
     
 
-    
+
+
+
+
 
 
 
