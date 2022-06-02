@@ -21,7 +21,7 @@ function computerPlay(rps) {
     console.log("The computer has selected " + computerPlay() + ".");
 
 
-function round(two) {
+function round(rock, paper, scissors) {
     let result;
 
     switch (computerPlay() == rock) {
@@ -67,9 +67,10 @@ function round(two) {
         default:
             result = "Something went wrong."
     }
+    return result;
     }
 
-    console.log(round());x
+    console.log(round());
     
 
 
