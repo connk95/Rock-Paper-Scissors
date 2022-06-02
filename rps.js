@@ -1,3 +1,8 @@
+let select = window.prompt("Please type rock, paper, or scissors.");
+let playerSelection = select.toLowerCase();
+
+console.log("You have selected " + playerSelection + ".");
+
 function computerPlay(rps) {
     let result;
     let rndInt = Math.floor(Math.random() * 3);
@@ -13,12 +18,11 @@ function computerPlay(rps) {
     return result;
     }
 
-    console.log(computerPlay());
+    console.log("The computer has selected " + computerPlay() + ".");
 
 
 function round(two) {
     let result;
-    let playerSelection = prompt("Please type rock, paper, or scissors.")
 
     switch (computerPlay() == rock) {
     
@@ -64,6 +68,8 @@ function round(two) {
             result = "Something went wrong."
     }
     }
+
+    console.log(round());x
     
 
 
