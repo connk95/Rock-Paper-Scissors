@@ -3,7 +3,6 @@ let playerSelection = prompt("Please type rock, paper, or scissors.").toLocaleLo
 console.log("You have selected " + playerSelection + ".");
 
 function computerPlay() {
-    let result;
     let rndInt = Math.floor(Math.random() * 3);
     if (rndInt === 0) {
         return "rock";
@@ -51,7 +50,6 @@ function round() {
         
         } else { 
             return "Please input a valid option.";
-
     }
     }
 
